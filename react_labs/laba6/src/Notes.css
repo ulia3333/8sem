@@ -1,0 +1,26 @@
+.note {
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+  }
+  
+  .note.red {
+    background-color: red;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
