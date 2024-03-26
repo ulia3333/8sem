@@ -1,0 +1,108 @@
+.calendar {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 10% auto 10% auto;
+  }
+
+/* //////////
+Голова
+////////// */
+
+.calendar-header {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Стрелки */
+
+.tools {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tools button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+}
+
+.tools button span:hover {
+    color: #99cccc;
+}
+
+/* //////////////
+Тело календаря 
+////////////// */
+
+.calendar-body {
+    width: 100%;
+}
+
+.table-header {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.weekday {
+    width: 100%;
+    text-align: center;
+}
+
+
+.table-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    text-align: center;
+
+    gap:0px;
+}
+
+.calendar-day {
+    width: 100%;
+    position: relative;
+    border: 1px solid #a6a6a6;
+}
+
+.calendar-day:hover {
+    background-color: rgba(0, 172, 224, 0.1);
+}
+
+.calendar-day {
+    color: #a6a6a6;
+}
+
+.current {
+    color: #000000;
+}
+
+.selected {
+    color: #615f5f;
+    font-weight: bold;
+    background-color: rgba(216, 0, 224, 0.1);
+}
+
+.today {
+    text-decoration: underline;
+  }

@@ -1,0 +1,25 @@
+.SortTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .SortTable th,
+  .SortTable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .SortTable th {
+    cursor: pointer;
+    background-color: #f2f2f2;
+  }
+  
+  .SortTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .SortTable tr:hover {
+    background-color: #ddd;
+  }
+  
